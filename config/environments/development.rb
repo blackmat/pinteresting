@@ -29,4 +29,7 @@ Pintersting::Application.configure do
 
   #Required for Heroku
   config.action_mailer.default_url_options = { :host => 'localhost' } 
+
+  #Required for PaperClip
+  Paperclip.options[:command_path] = 'C:\Program Files\ImageMagick-6.8.9-Q16'
 end
